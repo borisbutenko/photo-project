@@ -327,6 +327,7 @@
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             paginationClickable: true,
+            buttonDisabledClass: ''
             // Ajax on
             // lazyLoading: true,
             // lazyLoadingInPrevNext: true,
@@ -334,33 +335,33 @@
             // lazyLoadingOnTransitionStart: true
         });
 
-        $('.swiper-photo-single').on('click', 'a[data-action=lazy-swiper]', function () {
-            nextI($('a.swiper-button-next'), $('a.swiper-button-prev'));
-        });
-
-        nextI($('a.swiper-button-next'), $('a.swiper-button-prev'));
-
-        function nextI(btnNext$, btnPrev$) {
-            var index       = swiperPhotoSingle.snapIndex,
-                slideNext$  = $(swiperPhotoSingle.slides[index + 1]),
-                slidePrev$  = $(swiperPhotoSingle.slides[index - 1]),
-                targetNext$ = slideNext$.find('img'),
-                targetPrev$ = slidePrev$.find('img'),
-                srcNext     = targetNext$.attr('src'),
-                srcPrev     = targetPrev$.attr('src');
-
-            if ( targetNext$.length ) {
-                btnNext$.attr('href', srcNext);
-            } else {
-                btnNext$.attr('href', '#0');
-            }
-
-            if ( targetPrev$.length ) {
-                btnPrev$.attr('href', srcPrev);
-            } else {
-                btnPrev$.attr('href', '#0');
-            }
-        }
+        // $('.swiper-photo-single').on('click', 'a[data-action=lazy-swiper]', function () {
+        //     nextI($('a.swiper-button-next'), $('a.swiper-button-prev'));
+        // });
+        //
+        // nextI($('a.swiper-button-next'), $('a.swiper-button-prev'));
+        //
+        // function nextI(btnNext$, btnPrev$) {
+        //     var index       = swiperPhotoSingle.snapIndex,
+        //         slideNext$  = $(swiperPhotoSingle.slides[index + 1]),
+        //         slidePrev$  = $(swiperPhotoSingle.slides[index - 1]),
+        //         targetNext$ = slideNext$.find('img'),
+        //         targetPrev$ = slidePrev$.find('img'),
+        //         srcNext     = targetNext$.attr('src'),
+        //         srcPrev     = targetPrev$.attr('src');
+        //
+        //     if ( targetNext$.length ) {
+        //         btnNext$.attr('href', srcNext);
+        //     } else {
+        //         btnNext$.attr('href', '#0');
+        //     }
+        //
+        //     if ( targetPrev$.length ) {
+        //         btnPrev$.attr('href', srcPrev);
+        //     } else {
+        //         btnPrev$.attr('href', '#0');
+        //     }
+        // }
 
     });
 

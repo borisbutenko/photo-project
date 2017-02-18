@@ -1,0 +1,90 @@
+extends ../base
+block main
+  section.section__photo
+    .container-fluid
+      .row
+        .col-md-9.col-sm-9.col-xs-12
+          .single-service
+            .service-img
+            .text
+              h3 Название фотографии
+              p.text-center Описание фотографии
+          .swiper-container.swiper-photo-single
+            .swiper-wrapper
+              .swiper-slide
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/1.jpg' alt='')
+                .photo__content.clearfix
+                  .avatar.pull-left
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    a(href='#0') User
+                  .dislike.pull-right
+                    i.fa.fa-thumbs-down
+                    | 25
+                  .likes.pull-right
+                    i.fa.fa-thumbs-up
+                    | 270
+                  .view.pull-right
+                    i.fa.fa-eye
+                    | 350
+                .social-button.mt-50
+                  a(href='#0')
+                    i.fa.fa-facebook(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-vk(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-google-plus(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-linkedin(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-odnoklassniki(aria-hidden='true')
+                .blog-comment
+                  h2 3 comments
+                  .single-comment
+                    .user-img
+                      img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    .comment-body
+                      span
+                        a(href='#0') admin&nbsp;
+                        | Post authorOctober 6, 2014 at 1:38 am
+                        a(href='#0') &nbsp;Reply
+                      p just a nice post
+                  .single-comment
+                    .user-img
+                      img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    .comment-body
+                      span
+                        a(href='#0') admin&nbsp;
+                        | Post authorOctober 6, 2014 at 1:38 am
+                        a(href='#0') &nbsp;Reply
+                      p just a nice post
+                  .single-comment
+                    .user-img
+                      img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    .comment-body
+                      span
+                        a(href='#0') admin&nbsp;
+                        | Post authorOctober 6, 2014 at 1:38 am
+                        a(href='#0') &nbsp;Reply
+                      p just a nice post
+                .reply-area
+                  h2 Leave a Reply
+                  form
+                    label(for='comment') Comment
+                    textarea#comment(cols='45' rows='8')
+                  a.add-button(href='#0') Post comment
+            a(href='#0').swiper-button-prev
+            a(href='photo-2.html').swiper-button-next
+        .col-md-3.col-sm-3.col-xs-12
+          .left-content.pt-40
+            .content-box
+              .content__text.text-center Место для текста
+              .content__ggl.text-center Реклама от Google
+              h2.text-center Похожие фотографии
+              ul.photo-list
+                - var n = 0
+                while n < 5
+                  li
+                    a(href='#0') Фото. Описание
+                      img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  - n++

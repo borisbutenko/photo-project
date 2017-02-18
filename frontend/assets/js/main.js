@@ -314,7 +314,11 @@
             slidesPerView: 6,
             spaceBetween: 30,
             autoplay: 3000,
-            loop: true
+            loop: true,
+            lazyLoading: true,
+            lazyLoadingInPrevNext: true,
+            preloadImages: false,
+            lazyLoadingOnTransitionStart: true
         });
 
         var swiperPhotoSingle = new Swiper ('.swiper-photo-single', {
@@ -322,7 +326,11 @@
             slidesPerView: 'auto',
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
-            paginationClickable: true
+            paginationClickable: true,
+            lazyLoading: true,
+            lazyLoadingInPrevNext: true,
+            preloadImages: false,
+            lazyLoadingOnTransitionStart: true
         });
 
     });

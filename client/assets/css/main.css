@@ -19371,6 +19371,10 @@ body {
 .swiper-photo-single .swiper-slide {
   text-align: center;
 }
+.swiper-photo-single .swiper-button-next,
+.swiper-photo-single .swiper-button-prev {
+  top: 12% !important;
+}
 .service-img > i {
   font-size: 20px;
 }

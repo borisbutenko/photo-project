@@ -192,15 +192,16 @@ gulp.task('fonts', () => {
 /**
  * Compile pug files
  */
-let page = 'rules.pug';
+// let page = 'rules.pug';
 
 const pugPath = {
-    from : [`${dirs.from}pug/__pages/${page}`],
+    // from : [`${dirs.from}pug/__pages/${page}`],
+    from : `${dirs.from}pug/__pages/**/*`,
     to   : `../client/`,
     watch: [
         `${dirs.from}pug/__assets/**/*`,
         `${dirs.from}pug/__blocks/**/*`,
-        `${dirs.from}pug/__pages/${page}`
+        `${dirs.from}pug/__pages/**/*`
     ]
 };
 

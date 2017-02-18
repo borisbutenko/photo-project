@@ -315,22 +315,23 @@
             spaceBetween: 30,
             autoplay: 3000,
             loop: true,
-            lazyLoading: true,
-            lazyLoadingInPrevNext: true,
-            preloadImages: false,
-            lazyLoadingOnTransitionStart: true
+            // Ajax on
+            // lazyLoading: true,
+            // lazyLoadingInPrevNext: true,
+            // preloadImages: false,
+            // lazyLoadingOnTransitionStart: true
         });
 
         var swiperPhotoSingle = new Swiper ('.swiper-photo-single', {
-            // pagination: '.swiper-pagination',
             slidesPerView: 'auto',
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             paginationClickable: true,
-            lazyLoading: true,
-            lazyLoadingInPrevNext: true,
-            preloadImages: false,
-            lazyLoadingOnTransitionStart: true
+            // Ajax on
+            // lazyLoading: true,
+            // lazyLoadingInPrevNext: true,
+            // preloadImages: false,
+            // lazyLoadingOnTransitionStart: true
         });
 
     });

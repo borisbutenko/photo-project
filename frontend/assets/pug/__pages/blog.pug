@@ -1,0 +1,27 @@
+extends ../base
+block main
+  section.section__blog
+    .container-fluid
+      .blog-area
+        .container
+          .row
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+              .main_wraper.pt-40
+                - var n = 0
+                while n < 5
+                  .blog-inner
+                    .inner-img.overlay
+                      a(href='#0')
+                        img(src='assets/img/blog.jpg' alt='')
+                    .inner-content.mb-40
+                      h3 Qui nunc nobis videntur parum
+                      span 15 members viewed this post
+                      p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy...
+                      a.more(href='#0') read more
+                  - n++
+              .blog-bottom
+                .blog-pagination
+                  a.blog-active(href='#0') 1
+                  a(href='#0') 2
+                  a(href='#0')
+                    i.fa.fa-angle-right

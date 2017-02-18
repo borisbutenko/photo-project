@@ -1,0 +1,83 @@
+.light-header-area.ptb-35
+  .container-fluid
+    .row
+      .col-lg-2.col-md-2.col-sm-3.col-xs-12
+        .logo
+          a(href='index.html')
+            img(src='assets/img/logo-dark.png' alt='logo')
+      .col-sm-offset-6.col-sm-3.visible-sm
+        .top-control.dark
+          ul
+            li.settings
+              i.icon_cog
+              ul.settings-open
+                li
+                  a(href='#0') Войти
+                li
+                  | Language
+                  a.pad-left.active(href='#0') Русский
+                  a.pad-left(href='#0') English
+            li.search
+              .icon_search
+              .inner-form
+                form
+                  input(type='text' placeholder='Search')
+                  button(type='submit')
+                    i.fa.fa-search
+            //li.cart
+            //  i.icon_bag_alt
+            //  span.count.count-dark 2
+      .col-lg-8.col-md-8.col-sm-12.hidden-xs
+        .mainmenu.menu-dark-text
+          nav
+            ul
+              li
+                a.active(href='index.html') Главная
+              li
+                a(href='about.html') О сайте
+              li
+                a(href='blog.html') Статьи
+              li
+                a(href='rules.html') Правила
+      .col-lg-2.col-md-2.hidden-sm.col-xs-12
+        .top-control.dark
+          ul
+            li.settings
+              i.icon_cog
+              ul.settings-open
+                li
+                  a(href='#0') Войти
+                li
+                  | Language
+                  a.pad-left.active(href='#0') Русский
+                  a.pad-left(href='#0') English
+            li.search
+              .icon_search
+              .inner-form
+                form
+                  input(type='text' placeholder='Search')
+                  button(type='submit')
+                    i.fa.fa-search
+            //li.cart
+            //  i.icon_bag_alt
+            //  span.count.count-dark 2
+.mobile-menu-area.visible-xs
+  .container-fluid
+    .row
+      .col-md-12
+        .mobile-menu.mean-container
+          .mean-bar
+            a.js-meanmenu-reveal(href='#nav')
+              span
+              span
+              span
+            .mean-nav(hidden)
+              ul
+                li
+                  a.active(href='index.html') Главная
+                li
+                  a(href='about.html') О сайте
+                li
+                  a(href='blog.html') Статьи
+                li
+                  a(href='rules.html') Правила

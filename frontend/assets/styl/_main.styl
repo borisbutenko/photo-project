@@ -1,0 +1,156 @@
+body
+  oveflow-x: hidden
+
+.section
+  &__main
+    & .add-button
+      margin: 20px 0
+    & .section-title > p
+      padding-bottom: 0
+      &::after
+        content: "";
+        display: block;
+        height: 60px;
+        position: unset;
+        background: rgba(0,0,0,0) url(img/title_dark.png) no-repeat center;
+        margin-top: 20px;
+        width: 100%;
+  &__photo
+    & .social-button
+      text-align: center
+      & a
+        color: #555;
+        border: 2px solid #555;
+        &:hover
+          color: #c92c61;
+          border: 2px solid #c92c61;
+
+.more-photos
+  width: 100%
+  text-align: center
+
+.gift
+  & h2
+    text-align: center
+  &__last
+    text-align: center
+    & a.add
+      border: 1px solid #0079b6;
+      padding: 5px;
+      display: inline-block;
+      margin-bottom: 20px;
+    & img
+      margin: 10px 0
+  &__link
+    & img
+      width: 50px;
+      max-height: 35px;
+      vertical-align: top;
+  &__text
+    display: inline-block;
+    padding-left: 10px;
+  &__count
+    text-align: right;
+    padding-top: 5px;
+  &__country
+    text-align: center
+    padding: 0
+    & li
+      display: inline-block;
+      width: 25%;
+      margin-left: 5px
+
+.rating
+  &__list
+    text-align: center
+    & li
+      display: inline-block
+      width: 30%
+      margin-bottom: 5px
+      &:nth-child(1)
+        width: 100%
+      &:nth-child(2),
+      &:nth-child(3)
+        width: 48%
+  & .add
+    border: 1px solid #0079b6;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0 15px;
+    position: relative;
+    left: 5px;
+
+.js-meanmenu-reveal
+  width: 22px;
+  height: 22px;
+  padding: 13px 13px 11px 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #c92c61;
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  & > span
+    display: block;
+    background: #c92c61;
+    height: 3px;
+    margin-top: 3px;
+
+.swiper-photos
+  width: 100%
+  height: 100px
+
+.swiper-photo-single
+  & .swiper-slide
+    text-align: center
+
+.service-img
+  & > i
+    font-size: 20px
+
+.content
+  &__text
+    width: 100%;
+    height: 100px;
+    background: antiquewhite;
+    margin-bottom: 20px;
+  &__ggl
+    width: 100%;
+    height: 150px;
+    background: rgba(128, 101, 65, 0.18);
+    margin-bottom: 20px;
+
+.photo-list
+  text-align: center
+  & li
+    width: 100px;
+    display: inline-block;
+    margin: 0 25%;
+    & img
+      margin-top: 5px
+
+.photo__content
+  width: 50%;
+  display: inline-block;
+  margin-top: 20px;
+  & i
+    margin-right: 5px
+  & .likes, & .view
+    margin-right: 10px
+
+.user-img
+  max-width: 50px
+
+.avatar
+  & img
+    max-width: 50px;
+    margin-right: 10px;

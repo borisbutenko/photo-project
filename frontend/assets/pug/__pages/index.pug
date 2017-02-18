@@ -1,0 +1,116 @@
+extends ../base
+block main
+  section.section__main
+    .container-fluid
+      .row
+        .col-md-3.col-sm-3.col-xs-12
+          .single-service
+            .service-img
+              i.fa.fa-user
+            .text
+              h3 Нравится
+            p 3071 пользователям
+        .col-md-9.col-sm-9.col-xs-12
+          .swiper-container.swiper-photos
+            .swiper-wrapper
+              - var n = 0
+              while n < 15
+                .swiper-slide
+                  a(href='#0')
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                - n++
+    .container-fluid
+      .row
+        .col-md-2.col-sm-12.col-xs-12
+          .left-content.pt-40
+            .content-box.gift
+              h2 Мои подарки
+              .gift__last.clearfix
+                | Подарок
+                .gift__date.pull-left 12/17
+                .gift__time.pull-right 7:32
+                img(src='assets/img/bottom-banner/1.jpg' alt='')
+                a.add(href='#0')
+                  span Принять участие
+              h2 Подарки отправили
+              ul.gift__list
+                li.gift__item
+                  a.gift__link(href='#0')
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    .gift__text
+                      | Москва<br>
+                      | Сема
+                li.gift__item
+                  a.gift__link(href='#0')
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    .gift__text
+                      | Москва<br>
+                      | Сема
+                li.gift__item
+                  a.gift__link(href='#0')
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    .gift__text
+                      | Москва<br>
+                      | Сема
+              p.gift__count Всего подарков: 18
+              h2 Страны доставки
+              ul.gift__country
+                - var n = 0
+                while n < 10
+                  li
+                    a(href='#0')
+                      img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  - n++
+        .col-md-8.col-sm-12.col-xs-12
+          hr
+          .section-title
+            h3 Загружено сегодня
+            p 1232 фотографий
+          hr
+          .footer-banner.overlay
+            a(href='#0')
+              img(src='assets/img/bottom-banner/1.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/2.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/3.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/4.jpg' alt='')
+          .footer-banner.overlay
+            a(href='#0')
+              img(src='assets/img/bottom-banner/1.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/2.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/3.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/4.jpg' alt='')
+          .footer-banner.overlay
+            a(href='#0')
+              img(src='assets/img/bottom-banner/1.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/2.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/3.jpg' alt='')
+            a(href='#0')
+              img(src='assets/img/bottom-banner/4.jpg' alt='')
+          .more-photos
+            a.add-button(href='#0') Смотреть больше
+        .col-md-2.col-sm-12.col-xs-12
+          .left-content.pt-40
+            .content-box.rating.gift
+              h2 Обновление через
+              .rating__time.clearfix
+                .rating__date.pull-left 24/7
+                .rating__time.pull-right 7:32
+              hr
+              h2 Рейтинг держат
+              ul.rating__list
+                - var n = 0
+                while n < 9
+                  li
+                    a(href='#0')
+                      img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  - n++
+              a.add(href='#0')
+                span Вступить в борьбу за рейтинг

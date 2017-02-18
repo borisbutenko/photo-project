@@ -1,0 +1,98 @@
+extends ../base
+block main
+  section.section__blog-detail
+    .container-fluid
+      .blog-area.plr-30
+        .row
+          .col-lg-9.col-md-9.col-sm-12.col-xs-12
+            .main_wraper.pt-40.mr-30.small-mr-0
+              .blogdetails-inner
+                .inner-img
+                  a(href='#0')
+                    img(src='assets/img/blog.jpg' alt='')
+                .blogdetails-content.mb-40
+                  .blog-heading
+                    h1 Blog image post
+                    span Posts by : admin / Mar 10 2015
+                  .blog-content
+                    p Donec vitae hendrerit arcu, sit amet faucibus nisl. Cras pretium arcu ex. Aenean posuere libero eu augue condimentum rhoncus. Praesent ornare tortor ac ante egestas hendrerit. Aliquam et metus pharetra, bibendum massa nec, fermentum odio. Nunc id leo ultrices, mollis ligula in, finibus tortor. Mauris eu dui ut lectus fermentum eleifend. Pellentesque faucibus sem ante, non malesuada odio varius nec. Suspendisse potenti. Proin consectetur aliquam odio nec fringilla. Sed interdum at justo in efficitur. Vivamus gravida volutpat sodales. Fusce ornare sit amet ligula condimentum sagittis.
+                    p.comment-highlight Quisque semper nunc vitae erat pellentesque, ac placerat arcu consectetur. In venenatis elit ac ultrices convallis. Duis est nisi, tincidunt ac urna sed, cursus blandit lectus. In ullamcorper sit amet ligula ut eleifend. Proin dictum tempor ligula, ac feugiat metus. Sed finibus tortor eu scelerisque scelerisque.
+                    p Aenean et tempor eros, vitae sollicitudin velit. Etiam varius enim nec quam tempor, sed efficitur ex ultrices. Phasellus pretium est vel dui vestibulum condimentum. Aenean nec suscipit nibh. Phasellus nec lacus id arcu facilisis elementum. Curabitur lobortis, elit ut elementum congue, erat ex bibendum odio, nec iaculis lacus sem non lorem. Duis suscipit metus ante, sed convallis quam posuere quis. Ut tincidunt eleifend odio, ac fringilla mi vehicula nec. Nunc vitae lacus eget lectus imperdiet tempus sed in dui. Nam molestie magna at risus consectetur, placerat suscipit justo dignissim. Sed vitae fringilla enim, nec ullamcorper arcu.
+                    p Suspendisse turpis ipsum, tempus in nulla eu, posuere pharetra nibh. In dignissim vitae lorem non mollis. Praesent pretium tellus in tortor viverra condimentum. Nullam dignissim facilisis nisl, accumsan placerat justo ultricies vel. Vivamus finibus mi a neque pretium, ut convallis dui lacinia. Morbi a rutrum velit. Curabitur sagittis quam quis consectetur mattis. Aenean sit amet quam vel turpis interdum sagittis et eget neque. Nunc ante quam, luctus et neque a, interdum iaculis metus. Aliquam vel ante mattis, placerat orci id, vehicula quam. Suspendisse quis eros cursus, viverra urna sed, commodo mauris. Cras diam arcu, fringilla a sem condimentum, viverra facilisis nunc. Curabitur vitae orci id nulla maximus maximus. Nunc pulvinar sollicitudin molestie.
+                  .blog-content-bottom
+                    .tag
+                      span
+                        a(href='#0') 3 comments,&nbsp;
+                        | / Tags:
+                        a(href='#0') ,&nbsp;fashion,&nbsp;
+                        a(href='#0') t-shirt,&nbsp;
+                        a(href='#0') white&nbsp;
+                  .blog-comment
+                    h2 3 comments
+                    .single-comment
+                      .user-img
+                        img(src='assets/img/bottom-banner/1.jpg' alt='')
+                      .comment-body
+                        span
+                          a(href='#0') admin&nbsp;
+                          | Post authorOctober 6, 2014 at 1:38 am
+                          a(href='#0') &nbsp;Reply
+                        p just a nice post
+                    .single-comment
+                      .user-img
+                        img(src='assets/img/bottom-banner/1.jpg' alt='')
+                      .comment-body
+                        span
+                          a(href='#0') admin&nbsp;
+                          | Post authorOctober 6, 2014 at 1:38 am
+                          a(href='#0') &nbsp;Reply
+                        p just a nice post
+                    .single-comment
+                      .user-img
+                        img(src='assets/img/bottom-banner/1.jpg' alt='')
+                      .comment-body
+                        span
+                          a(href='#0') admin&nbsp;
+                          | Post authorOctober 6, 2014 at 1:38 am
+                          a(href='#0') &nbsp;Reply
+                        p just a nice post
+
+                  .reply-area
+                    h2 Leave a Reply
+                    span Your email address will not be published. Required fields are marked *
+                    form
+                      label(for='comment') Comment
+                      textarea#comment(cols='45' rows='8')
+                      .single.pr-30
+                        label(for='name') Name
+                        input#name(type='text')
+                      .single.pr-30
+                        label(for='website') Website
+                        input#website(type='text')
+                      .single
+                        label(for='email') Email
+                        input#email(type='email')
+                    a.add-button(href='#0') Post comment
+          .col-lg-3.col-md-3.col-sm-12.col-xs-12
+            .left-content.pt-40
+              .content-box
+                h2 search
+                form
+                  input(type='text' placeholder='Search...')
+                  i.fa.fa-search
+              .content-box.rating.gift
+                h2 Обновление через
+                .rating__time.clearfix
+                  .rating__date.pull-left 24/7
+                  .rating__time.pull-right 7:32
+                hr
+                h2 Рейтинг держат
+                ul.rating__list
+                  - var n = 0
+                  while n < 9
+                    li
+                      a(href='#0')
+                        img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    - n++
+                a.add.text-center(href='#0' style='display:block')
+                  span Вступить в борьбу за рейтинг

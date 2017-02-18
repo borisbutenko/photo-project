@@ -19398,9 +19398,10 @@ body {
   margin-top: 5px;
 }
 .photo__content {
-  width: 50%;
+  width: 100%;
   display: inline-block;
   margin-top: 20px;
+  padding: 0 10px;
 }
 .photo__content i {
   margin-right: 5px;

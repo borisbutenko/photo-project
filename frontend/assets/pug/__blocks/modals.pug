@@ -5,8 +5,49 @@
         button.close(type="button" data-dismiss="modal" aria-label="Close")
           span &times;
         h4#set-address-title.modal-title Укажите адрес доставки
-      .modal-body
-          input.form-control(type='text')
+      .modal-body.clearfix
+        .input-one.form-list.col-md-12
+          label.required Имя получателя:
+          input.email(type='text')
+          p.help-block Пожалуйста, введите полностью ФИО получателя без сокращений (например Ivanov Ivan Ivanovich)
+        .country-select.col-md-12
+          label.required Страна/регион:
+          select.email.s-email.s-wid
+            option(selected) Выберите
+            option Страна 1
+            option Страна 2
+            option Страна 3
+        .input-one.form-list.col-md-12
+          label.required Улица, дом, квартира:
+          input.email(type='text' placeholder='Улица, дом, квартира')
+          input.email.mt-15(type='text' placeholder='Квартира, блок и т.п. (при необходимости)')
+        .country-select.col-md-12
+          label.required Край/область/регион:
+          select.email.s-email.s-wid
+            option(selected) Выберите
+            option Край 1
+            option Область 2
+            option Регион 3
+        .input-one.form-list.col-md-12
+          label.required Город:
+          input.email(type='text')
+        .input-one.form-list.col-md-12
+          label.required Почтовый индекс:
+          input.email(type='text')
+          label.required В моем адресе нет почтового кода
+          input.email(type='checkbox')
+        .input-one.form-list.col-md-12.input-phone
+          label.required Телефон:
+          input.email(type='text')
+          input.email(type='text')
+          input.email(type='text')
+          p.help-block Код страны - код города - номер телефона
+        .input-one.form-list.col-md-12
+          label.required Мобильный телефон:
+          input.email(type='text')
+        .input-one.form-list.col-md-12
+          label.required Устрановить по умолчанию
+          input.email(type='checkbox')
       .modal-footer
         button.btn.btn-default(type="button" data-dismiss="modal" aria-label="Close") Отмена
         button.btn.btn-primary(type="button" data-dismiss="modal" aria-label="Close") Сохранить
@@ -58,3 +99,40 @@
       .modal-footer
         button.btn.btn-default(type="button" data-dismiss="modal" aria-label="Close") Отмена
         button.btn.btn-primary(type="button" data-dismiss="modal" aria-label="Close") Отправить
+
+#profile-settings.modal.fade(tabindex="-1" role="dialog" aria-labelledby="profile-settings-title")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span &times;
+        h4#profile-settings-title.modal-title Настройка профиля
+      .modal-body
+        .billing-info.clearfix
+          .input-one.form-list.col-sm-3
+            label.required Имя
+            input.email(type='text')
+          .input-one.form-list.col-sm-3
+            label.required Фамилия
+            input.email(type='text')
+          .input-one.form-list.col-sm-3
+            label.required Отчество
+            input.email(type='text')
+          .input-one.form-list.col-sm-3
+            label.required Возраст
+            input.email(type='text')
+          .input-one.form-list.col-sm-12
+            label.required Адрес
+            input.email(type='text')
+          .form-group.col-sm-12
+            p Пол
+            .method-input-box
+              p
+                input(type='radio' name='sex')
+                label Мужской
+              p
+                input(type='radio' name='sex')
+                label Женский
+      .modal-footer
+        button.btn.btn-default(type="button" data-dismiss="modal" aria-label="Close") Отмена
+        button.btn.btn-primary(type="button" data-dismiss="modal" aria-label="Close") Сохранить

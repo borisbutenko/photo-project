@@ -162,8 +162,60 @@
             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
             <h4 class="modal-title" id="set-address-title">Укажите адрес доставки</h4>
           </div>
-          <div class="modal-body">
-            <input class="form-control" type="text">
+          <div class="modal-body clearfix">
+            <div class="input-one form-list col-md-12">
+              <label class="required">Имя получателя:</label>
+              <input class="email" type="text">
+              <p class="help-block">Пожалуйста, введите полностью ФИО получателя без сокращений (например Ivanov Ivan Ivanovich)</p>
+            </div>
+            <div class="country-select col-md-12">
+              <label class="required">Страна/регион:</label>
+              <select class="email s-email s-wid">
+                <option selected>Выберите</option>
+                <option>Страна 1</option>
+                <option>Страна 2</option>
+                <option>Страна 3</option>
+              </select>
+            </div>
+            <div class="input-one form-list col-md-12">
+              <label class="required">Улица, дом, квартира:</label>
+              <input class="email" type="text" placeholder="Улица, дом, квартира">
+              <input class="email mt-15" type="text" placeholder="Квартира, блок и т.п. (при необходимости)">
+            </div>
+            <div class="country-select col-md-12">
+              <label class="required">Край/область/регион:</label>
+              <select class="email s-email s-wid">
+                <option selected>Выберите</option>
+                <option>Край 1</option>
+                <option>Область 2</option>
+                <option>Регион 3</option>
+              </select>
+            </div>
+            <div class="input-one form-list col-md-12">
+              <label class="required">Город:</label>
+              <input class="email" type="text">
+            </div>
+            <div class="input-one form-list col-md-12">
+              <label class="required">Почтовый индекс:</label>
+              <input class="email" type="text">
+              <label class="required">В моем адресе нет почтового кода</label>
+              <input class="email" type="checkbox">
+            </div>
+            <div class="input-one form-list col-md-12 input-phone">
+              <label class="required">Телефон:</label>
+              <input class="email" type="text">
+              <input class="email" type="text">
+              <input class="email" type="text">
+              <p class="help-block">Код страны - код города - номер телефона</p>
+            </div>
+            <div class="input-one form-list col-md-12">
+              <label class="required">Мобильный телефон:</label>
+              <input class="email" type="text">
+            </div>
+            <div class="input-one form-list col-md-12">
+              <label class="required">Устрановить по умолчанию</label>
+              <input class="email" type="checkbox">
+            </div>
           </div>
           <div class="modal-footer">
             <button class="btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Отмена</button>
@@ -234,6 +286,57 @@
           <div class="modal-footer">
             <button class="btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Отмена</button>
             <button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="profile-settings" tabindex="-1" role="dialog" aria-labelledby="profile-settings-title">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <h4 class="modal-title" id="profile-settings-title">Настройка профиля</h4>
+          </div>
+          <div class="modal-body">
+            <div class="billing-info clearfix">
+              <div class="input-one form-list col-sm-3">
+                <label class="required">Имя</label>
+                <input class="email" type="text">
+              </div>
+              <div class="input-one form-list col-sm-3">
+                <label class="required">Фамилия</label>
+                <input class="email" type="text">
+              </div>
+              <div class="input-one form-list col-sm-3">
+                <label class="required">Отчество</label>
+                <input class="email" type="text">
+              </div>
+              <div class="input-one form-list col-sm-3">
+                <label class="required">Возраст</label>
+                <input class="email" type="text">
+              </div>
+              <div class="input-one form-list col-sm-12">
+                <label class="required">Адрес</label>
+                <input class="email" type="text">
+              </div>
+              <div class="form-group col-sm-12">
+                <p>Пол</p>
+                <div class="method-input-box">
+                  <p>
+                    <input type="radio" name="sex">
+                    <label>Мужской</label>
+                  </p>
+                  <p>
+                    <input type="radio" name="sex">
+                    <label>Женский</label>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Отмена</button>
+            <button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Сохранить</button>
           </div>
         </div>
       </div>

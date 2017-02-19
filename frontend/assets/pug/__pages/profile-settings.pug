@@ -1,0 +1,142 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name="description" content="")
+    meta(name="keywords" content="")
+    title Photo project title
+    include ../__assets/styles
+    include ../__assets/scripts
+  body#no-bg
+    .page-inner
+      .light-header-area.ptb-35
+        .container-fluid
+          .row
+            .col-lg-2.col-md-2.col-sm-3.col-xs-12
+              .logo
+                a(href='index.html')
+                  img(src='assets/img/logo-dark.png' alt='logo')
+            .col-sm-offset-6.col-sm-3.visible-sm
+              .top-control.dark
+                ul
+                  li.settings
+                    i.icon_cog
+                    ul.settings-open
+                      li
+                        a(href='#0') Войти через
+                      li
+                        | Language
+                        a.pad-left.active(href='#0') Русский
+                        a.pad-left(href='#0') English
+                  li.search
+                    .icon_search
+                    .inner-form
+                      form
+                        input(type='text' placeholder='Search')
+                        button(type='submit')
+                          i.fa.fa-search
+                  li.profile
+                    a(href='profile.html') Просмотров
+                    span.count.count-dark 1388
+            .col-lg-5.col-md-5.col-sm-12.hidden-xs
+              .mainmenu.menu-dark-text
+                nav
+                  ul
+                    li
+                      a.active(href='index.html') Главная
+                    li
+                      a(href='about.html') О сайте
+                    li
+                      a(href='blog.html') Статьи
+                    li
+                      a(href='rules.html') Правила
+            .col-lg-5.col-md-5.hidden-sm.col-xs-12
+              .top-control.dark.login
+                .social-button.social-button-login
+                  span Войти:
+                  a(href='#0')
+                    i.fa.fa-facebook(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-vk(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-google-plus(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-linkedin(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-odnoklassniki(aria-hidden='true')
+                ul
+                  li.settings
+                    i.icon_cog
+                    ul.settings-open
+                      li
+                        | Language
+                        a.pad-left.active(href='#0') Русский
+                        a.pad-left(href='#0') English
+                  li.search
+                    .icon_search
+                    .inner-form
+                      form
+                        input(type='text' placeholder='Search')
+                        button(type='submit')
+                          i.fa.fa-search
+                  li.profile
+                    a(href='profile.html') Просмотров
+                    span.count.count-dark 1388
+      .mobile-menu-area.visible-xs
+        .container-fluid
+          .row
+            .col-md-12
+              .mobile-menu.mean-container
+                .mean-bar
+                  a.js-meanmenu-reveal(href='#nav')
+                    span
+                    span
+                    span
+                  .mean-nav(hidden)
+                    ul
+                      li
+                        a.active(href='index.html') Главная
+                      li
+                        a(href='about.html') О сайте
+                      li
+                        a(href='blog.html') Статьи
+                      li
+                        a(href='rules.html') Правила
+      main.main
+        .container-fluid
+          .row
+            .col-md-12
+              .easy
+                .billing-info
+                  .input-one.form-list.col-sm-3
+                    label.required Имя
+                    input.email(type='text')
+                  .input-one.form-list.col-sm-3
+                    label.required Фамилия
+                    input.email(type='text')
+                  .input-one.form-list.col-sm-3
+                    label.required Отчество
+                    input.email(type='text')
+                  .input-one.form-list.col-sm-3
+                    label.required Возраст
+                    input.email(type='text')
+                  .input-one.form-list.col-sm-12
+                    label.required Адрес
+                    input.email(type='text')
+                  .form-group.col-sm-12
+                    p Пол
+                    .method-input-box
+                      p
+                        input(type='radio' name='sex')
+                        label Мужской
+                      p
+                        input(type='radio' name='sex')
+                        label Женский
+                  .back
+                    a.o-back-to(href='profile.html')
+                      i.fa.fa-arrow-up
+                      | &nbsp;Назад
+                    button.button2.get(type='button') Сохранить
+    include ../__blocks/footer
+    include ../__blocks/modals

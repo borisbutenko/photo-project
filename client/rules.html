@@ -51,13 +51,10 @@
                       </form>
                     </div>
                   </li>
-                  <!--li.cart-->
-                  <!--  i.icon_bag_alt-->
-                  <!--  span.count.count-dark 2-->
                 </ul>
               </div>
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 hidden-xs">
+            <div class="col-lg-5 col-md-5 col-sm-12 hidden-xs">
               <div class="mainmenu menu-dark-text">
                 <nav>
                   <ul>
@@ -69,14 +66,12 @@
                 </nav>
               </div>
             </div>
-            <div class="col-lg-2 col-md-2 hidden-sm col-xs-12">
-              <div class="top-control dark">
+            <div class="col-lg-5 col-md-5 hidden-sm col-xs-12">
+              <div class="top-control dark login">
+                <div class="social-button social-button-login"><span>Войти:</span><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
                 <ul>
                   <li class="settings"><i class="icon_cog"></i>
                     <ul class="settings-open">
-                      <li>Войти через
-                        <div class="social-button social-button-login"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
-                      </li>
                       <li>Language<a class="pad-left active" href="#0">Русский</a><a class="pad-left" href="#0">English</a></li>
                     </ul>
                   </li>
@@ -89,9 +84,6 @@
                       </form>
                     </div>
                   </li>
-                  <!--li.cart-->
-                  <!--  i.icon_bag_alt-->
-                  <!--  span.count.count-dark 2-->
                 </ul>
               </div>
             </div>
@@ -162,6 +154,89 @@
     <div class="container-fluid">
       <div class="footer-bottom-area ptb-25">
         <p>Copyright © 2017&nbsp;<a href="#0">Company Name</a>. All Rights Reserved</p>
+      </div>
+    </div>
+    <div class="modal fade" id="set-address" tabindex="-1" role="dialog" aria-labelledby="set-address-title">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <h4 class="modal-title" id="set-address-title">Укажите адрес доставки</h4>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" type="text">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Отмена</button>
+            <button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="send-gift" tabindex="-1" role="dialog" aria-labelledby="send-gift-title">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <h4 class="modal-title" id="send-gift-title">Кому отправляем?</h4>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-md-6">
+              <div class="country-select">
+                <select class="email s-email s-wid">
+                  <option selected>Выберите друга</option>
+                  <option>Друг 1</option>
+                  <option>Друг 2</option>
+                  <option>Друг 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="country-select">
+                <select class="email s-email s-wid">
+                  <option selected>Выберите подарок</option>
+                  <option>Подарок 1</option>
+                  <option>Подарок 2</option>
+                  <option>Подарок 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Отмена</button>
+            <button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Отправить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="send-balls" tabindex="-1" role="dialog" aria-labelledby="send-balls-title">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span>&times;</span></button>
+            <h4 class="modal-title" id="send-balls-title">Кому отправляем?</h4>
+          </div>
+          <div class="modal-body clearfix">
+            <div class="col-md-12">
+              <div class="input-one form-list">
+                <label class="required">Количество баллов</label>
+                <input class="email" type="text">
+              </div>
+              <div class="country-select">
+                <select class="email s-email s-wid">
+                  <option selected>Выберите друга</option>
+                  <option>Друг 1</option>
+                  <option>Друг 2</option>
+                  <option>Друг 3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button" data-dismiss="modal" aria-label="Close">Отмена</button>
+            <button class="btn btn-primary" type="button" data-dismiss="modal" aria-label="Close">Отправить</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

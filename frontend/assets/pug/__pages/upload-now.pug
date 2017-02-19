@@ -1,0 +1,27 @@
+extends ../base
+block main
+  section.section__all-photo
+    .container-fluid
+      .row
+        .col-md-12.col-sm-12.col-xs-12
+          hr
+          .section-title
+            h3 Загружено сегодня
+            p 723 фото
+          hr
+          - var n = 0
+          while n < 20
+            .footer-banner.overlay.popular
+              a(href='#0')
+                img(src='assets/img/bottom-banner/1.jpg' alt='')
+                span Мне нравится
+              a(href='#0')
+                img(src='assets/img/bottom-banner/2.jpg' alt='')
+                span Мне нравится
+              a(href='#0')
+                img(src='assets/img/bottom-banner/3.jpg' alt='')
+                span Мне нравится
+              a(href='#0')
+                img(src='assets/img/bottom-banner/4.jpg' alt='')
+                span Мне нравится
+            - n++

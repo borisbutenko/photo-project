@@ -1,0 +1,60 @@
+#set-address.modal.fade(tabindex="-1" role="dialog" aria-labelledby="set-address-title")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span &times;
+        h4#set-address-title.modal-title Укажите адрес доставки
+      .modal-body
+          input.form-control(type='text')
+      .modal-footer
+        button.btn.btn-default(type="button" data-dismiss="modal" aria-label="Close") Отмена
+        button.btn.btn-primary(type="button" data-dismiss="modal" aria-label="Close") Сохранить
+
+#send-gift.modal.fade(tabindex="-1" role="dialog" aria-labelledby="send-gift-title")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span &times;
+        h4#send-gift-title.modal-title Кому отправляем?
+      .modal-body.clearfix
+        .col-md-6
+          .country-select
+            select.email.s-email.s-wid
+              option(selected) Выберите друга
+              option Друг 1
+              option Друг 2
+              option Друг 3
+        .col-md-6
+          .country-select
+            select.email.s-email.s-wid
+              option(selected) Выберите подарок
+              option Подарок 1
+              option Подарок 2
+              option Подарок 3
+      .modal-footer
+        button.btn.btn-default(type="button" data-dismiss="modal" aria-label="Close") Отмена
+        button.btn.btn-primary(type="button" data-dismiss="modal" aria-label="Close") Отправить
+
+#send-balls.modal.fade(tabindex="-1" role="dialog" aria-labelledby="send-balls-title")
+  .modal-dialog(role="document")
+    .modal-content
+      .modal-header
+        button.close(type="button" data-dismiss="modal" aria-label="Close")
+          span &times;
+        h4#send-balls-title.modal-title Кому отправляем?
+      .modal-body.clearfix
+        .col-md-12
+          .input-one.form-list
+            label.required Количество баллов
+            input.email(type='text')
+          .country-select
+            select.email.s-email.s-wid
+              option(selected) Выберите друга
+              option Друг 1
+              option Друг 2
+              option Друг 3
+      .modal-footer
+        button.btn.btn-default(type="button" data-dismiss="modal" aria-label="Close") Отмена
+        button.btn.btn-primary(type="button" data-dismiss="modal" aria-label="Close") Отправить

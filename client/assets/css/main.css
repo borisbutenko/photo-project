@@ -19248,6 +19248,13 @@ button.button2:hover {
 body {
   oveflow-x: hidden;
 }
+body.modal-open {
+  overflow: auto !important;
+  padding: 0 !important;
+}
+.pt-15 {
+  padding-top: 10px;
+}
 .section__main .add-button {
   margin: 20px 0;
 }
@@ -19287,8 +19294,8 @@ body {
 .gift__last a.add {
   border: 1px solid #0079b6;
   padding: 5px;
-  display: inline-block;
   margin-bottom: 20px;
+  display: block;
 }
 .gift__last img {
   margin: 10px 0;
@@ -19314,6 +19321,27 @@ body {
   display: inline-block;
   width: 25%;
   margin-left: 5px;
+}
+.rating__gift li {
+  display: inline-block;
+  width: 48%;
+}
+.rating__activity {
+  margin-bottom: 10px;
+}
+.rating__activity span:last-child {
+  background: #e5e5e5 none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 3px;
+  color: #6f6f6f;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 5px;
+}
+.rating__activity span:first-child {
+  padding: 5px;
+  padding-left: 0;
 }
 .rating__list {
   text-align: center;
@@ -19421,11 +19449,71 @@ body {
   max-width: 50px;
   margin-right: 10px;
 }
+.social-button-login {
+  float: left;
+  position: relative;
+  top: -10px;
+}
+.social-button-login + ul {
+  float: right;
+  margin-top: -5px;
+}
+.social-button-login span {
+  position: relative;
+  top: -10px;
+  margin-right: 5px;
+}
 .social-button-login > a {
+  height: 30px;
+  width: 30px;
   display: inline-block !important;
   padding: 0;
-  margin: 0;
+  color: #555;
+  border-color: #555;
+  margin: 0 5px;
 }
 .social-button-login > a > i {
-  line-height: 38px;
+  position: relative;
+  top: -4px;
+}
+.profile i {
+  margin-right: 10px;
+}
+.profile span {
+  margin-left: 5px;
+}
+.popular > a {
+  position: relative;
+}
+.popular > a:hover span {
+  opacity: 1;
+  color: #c92c61;
+  border: 2px solid #c92c61;
+}
+.popular span {
+  border: 2px solid #7b7b7b;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 20px 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #323232;
+  background: rgba(255,255,255,0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 0;
+  text-align: center;
+  width: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.login {
+  width: 100%;
+}
+.modal-body select.email {
+  width: 100%;
 }

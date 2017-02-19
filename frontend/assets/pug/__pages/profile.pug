@@ -1,0 +1,252 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name="description" content="")
+    meta(name="keywords" content="")
+    title Photo project title
+    include ../__assets/styles
+    include ../__assets/scripts
+  body#no-bg
+    .page-inner
+      .light-header-area.ptb-35
+        .container-fluid
+          .row
+            .col-lg-2.col-md-2.col-sm-3.col-xs-12
+              .logo
+                a(href='index.html')
+                  img(src='assets/img/logo-dark.png' alt='logo')
+            .col-sm-offset-6.col-sm-3.visible-sm
+              .top-control.dark
+                ul
+                  li.settings
+                    i.icon_cog
+                    ul.settings-open
+                      li
+                        a(href='#0') Войти через
+                      li
+                        | Language
+                        a.pad-left.active(href='#0') Русский
+                        a.pad-left(href='#0') English
+                  li.search
+                    .icon_search
+                    .inner-form
+                      form
+                        input(type='text' placeholder='Search')
+                        button(type='submit')
+                          i.fa.fa-search
+                  li.profile
+                    a(href='profile.html') Просмотров
+                    span.count.count-dark 1388
+            .col-lg-5.col-md-5.col-sm-12.hidden-xs
+              .mainmenu.menu-dark-text
+                nav
+                  ul
+                    li
+                      a.active(href='index.html') Главная
+                    li
+                      a(href='about.html') О сайте
+                    li
+                      a(href='blog.html') Статьи
+                    li
+                      a(href='rules.html') Правила
+            .col-lg-5.col-md-5.hidden-sm.col-xs-12
+              .top-control.dark.login
+                .social-button.social-button-login
+                  span Войти:
+                  a(href='#0')
+                    i.fa.fa-facebook(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-vk(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-google-plus(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-linkedin(aria-hidden='true')
+                  a(href='#0')
+                    i.fa.fa-odnoklassniki(aria-hidden='true')
+                ul
+                  li.settings
+                    i.icon_cog
+                    ul.settings-open
+                      li
+                        | Language
+                        a.pad-left.active(href='#0') Русский
+                        a.pad-left(href='#0') English
+                  li.search
+                    .icon_search
+                    .inner-form
+                      form
+                        input(type='text' placeholder='Search')
+                        button(type='submit')
+                          i.fa.fa-search
+                  li.profile
+                    a(href='profile.html') Просмотров
+                    span.count.count-dark 1388
+      .mobile-menu-area.visible-xs
+        .container-fluid
+          .row
+            .col-md-12
+              .mobile-menu.mean-container
+                .mean-bar
+                  a.js-meanmenu-reveal(href='#nav')
+                    span
+                    span
+                    span
+                  .mean-nav(hidden)
+                    ul
+                      li
+                        a.active(href='index.html') Главная
+                      li
+                        a(href='about.html') О сайте
+                      li
+                        a(href='blog.html') Статьи
+                      li
+                        a(href='rules.html') Правила
+      main.main
+        .container-fluid
+          .row
+            .col-md-2.col-sm-12.col-xs-12
+              .left-content.pt-40
+                .content-box.gift
+                  h2 Мой рейтинг
+                  .gift__last.clearfix
+                    | 35 место
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                    a.add(href='my-photo.html')
+                      span Мои фото
+                    a.add(href='#0' data-toggle="modal" data-target="#set-address")
+                      span Указать адрес доставки
+                    a.add(href='profile-settings.html')
+                      span Настройки
+                    a.add(href='#0' data-toggle="modal" data-target="#send-gift")
+                      span Отправить подарок
+                    a.add(href='#0' data-toggle="modal" data-target="#send-balls")
+                      span Подарить баллы
+            .col-md-8.col-sm-12.col-xs-12
+              hr
+              .section-title
+                h3 Сидоров Иван
+                span 28 лет
+              hr
+              h2 Мне подарили баллы
+              .table-content.table-responsive.sender
+                table
+                  thead
+                    th.product-thumbnail Фото
+                    th.product-name Ник
+                    th.product-price Сумма баллов
+                  tbody
+                    - var n = 0
+                    while n < 4
+                      tr
+                        td.sender-avatar.product-thumbnail
+                          a(href='#0')
+                            img(src='assets/img/bottom-banner/4.jpg' alt='')
+                        td.sender-gift.product-name
+                          a(href='#0') Иванов Василий
+                        td.sender-balls.product-price 10
+                      - n++
+            .col-md-2.col-sm-12.col-xs-12
+              .left-content.pt-40
+                .content-box.rating.gift
+                  h2 Активность
+                  .rating__time.clearfix
+                    .rating__activity.clearfix
+                      span.pull-left Загружено фото
+                      span.pull-right 142
+                    .rating__activity.clearfix
+                      span.pull-left Комментариев
+                      span.pull-right 17
+                    .rating__activity.clearfix
+                      span.pull-left Баллов
+                      span.pull-right 242
+                  hr
+                  h2 Мои награды
+                  ul.rating__gift
+                    - var n = 0
+                    while n < 6
+                      li
+                        a(href='#0')
+                          img(src='assets/img/bottom-banner/1.jpg' alt='')
+                      - n++
+                  hr
+                  h2 Мои подарки
+                  ul.rating__gift
+                    - var n = 0
+                    while n < 6
+                      li
+                        a(href='#0')
+                          img(src='assets/img/bottom-banner/1.jpg' alt='')
+                      - n++
+          .row
+            .col-md-12
+              .section-title
+                h3 Мои фото
+                p 75 фотографий
+              hr
+              .footer-banner.overlay
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/1.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/2.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/3.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/4.jpg' alt='')
+              .footer-banner.overlay
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/1.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/2.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/3.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/4.jpg' alt='')
+              .footer-banner.overlay
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/1.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/2.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/3.jpg' alt='')
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/4.jpg' alt='')
+              .more-photos.pt-15
+                a.add-button(href='my-photo.html') Смотреть все
+              hr
+            .col-md-12
+              .section-title
+                h3 Последние комментарии
+              hr
+              .blog-comment
+                h2 3 comments
+                .single-comment
+                  .user-img
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  .comment-body
+                    span
+                      a(href='#0') admin&nbsp;
+                      | Post authorOctober 6, 2014 at 1:38 am
+                      a(href='#0') &nbsp;Reply
+                    p just a nice post
+                .single-comment
+                  .user-img
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  .comment-body
+                    span
+                      a(href='#0') admin&nbsp;
+                      | Post authorOctober 6, 2014 at 1:38 am
+                      a(href='#0') &nbsp;Reply
+                    p just a nice post
+                .single-comment
+                  .user-img
+                    img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  .comment-body
+                    span
+                      a(href='#0') admin&nbsp;
+                      | Post authorOctober 6, 2014 at 1:38 am
+                      a(href='#0') &nbsp;Reply
+                    p just a nice post
+    include ../__blocks/footer
+    include ../__blocks/modals

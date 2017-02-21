@@ -20586,6 +20586,11 @@ p.zar {
   border: 2px solid #808080;
   border-radius: 10px;
 }
+.large-photo {
+  background: rgba(0,0,0,0) url("img/footer-bg.jpg") no-repeat 0 0/cover;
+  width: 100%;
+  height: 158px;
+}
 @keyframes swiper-preloader-spin {
   100% {
     transform: rotate(360deg);

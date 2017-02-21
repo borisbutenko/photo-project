@@ -94,21 +94,24 @@
         .text
           h3 Нравится
         p 3071 пользователям
+        p Последние лайки от:
+        .swiper-container.swiper-photos
+          .swiper-wrapper
+            - var n = 0
+            while n < 3
+              .swiper-slide
+                a(href='#0')
+                  img(src='assets/img/bottom-banner/1.jpg' alt='')
+              - n++
     .col-md-9.col-sm-9.col-xs-12
-      .swiper-container.swiper-photos
-        .swiper-wrapper
-          - var n = 0
-          while n < 15
-            .swiper-slide
-              a(href='#0')
-                img(src='assets/img/bottom-banner/1.jpg' alt='')
-            - n++
+      .large-photo
+
   script.
       $(function () {
           var swiperPhotos = new Swiper('.swiper-photos', {
-              slidesPerView: 6,
-              spaceBetween: 30,
-              autoplay: 3000,
+              slidesPerView: 3,
+              spaceBetween: 10,
+              autoplay: 5000,
               loop: true
           });
       })

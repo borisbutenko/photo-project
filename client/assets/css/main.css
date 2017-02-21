@@ -16075,12 +16075,11 @@ li.cart span.count-dark {
   padding: 16px 0 10px;
   top: 0;
   width: 100%;
-  z-index: 100;
   animation: 600ms ease-in-out 0s normal none 1 running fadeInDown;
   margin: 0 auto;
   position: fixed !important;
   right: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 .home2-middle-text {
   margin-left: 13%;
@@ -20590,7 +20589,7 @@ p.zar {
 .large-photo {
   background: rgba(0,0,0,0) url("img/footer-bg.jpg") no-repeat 0 0/cover;
   width: 100%;
-  height: 157px;
+  height: 166px;
   padding-bottom: 10px;
 }
 div.userslike {
@@ -20614,6 +20613,13 @@ div.userslike i {
 }
 main {
   margin-top: 30px;
+}
+.btn.btn-primary {
+  margin: 0 !important;
+  background-color: #428bca;
+}
+[hidden] {
+  display: none !important;
 }
 @keyframes swiper-preloader-spin {
   100% {

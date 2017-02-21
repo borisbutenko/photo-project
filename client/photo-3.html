@@ -111,6 +111,50 @@
           </div>
         </div>
       </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="single-service">
+              <div class="service-img"><i class="fa fa-user"></i></div>
+              <div class="text">
+                <h3>Нравится</h3>
+              </div>
+              <p>3071 пользователям</p>
+            </div>
+          </div>
+          <div class="col-md-9 col-sm-9 col-xs-12">
+            <div class="swiper-container swiper-photos">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          $(function () {
+              var swiperPhotos = new Swiper('.swiper-photos', {
+                  slidesPerView: 6,
+                  spaceBetween: 30,
+                  autoplay: 3000,
+                  loop: true
+              });
+          })
+        </script>
+      </div>
       <main class="main">
         <section class="section__photo">
           <div class="container-fluid">
@@ -125,25 +169,27 @@
                 </div>
                 <div class="swiper-container swiper-photo-single">
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/3.jpg" alt=""></a>
-                      <div class="photo__content">
-                        <div class="row clearfix like-dislike">
-                          <div class="col-md-2"><a class="likes" href="#0" data-action="like"><i class="fa fa-thumbs-up"></i>270</a></div>
-                          <div class="col-md-2 col-md-offset-3">
-                            <div class="view pull-left"><i class="fa fa-eye"></i>350</div>
+                    <div class="swiper-slide">
+                      <div class="photo-wrapper"><a href="#0"><img src="assets/img/bottom-banner/3.jpg" alt=""></a>
+                        <div class="photo__content">
+                          <div class="row clearfix like-dislike">
+                            <div class="col-md-2"><a class="likes" href="#0" data-action="like"><i class="fa fa-thumbs-up"></i>270</a></div>
+                            <div class="col-md-2 col-md-offset-3">
+                              <div class="view pull-left"><i class="fa fa-eye"></i>350</div>
+                            </div>
+                            <div class="col-md-2 col-md-offset-3"><a class="dislike pull-right" href="#0" data-action="dislike"><i class="fa fa-thumbs-down"></i>25</a></div>
                           </div>
-                          <div class="col-md-2 col-md-offset-3"><a class="dislike pull-right" href="#0" data-action="dislike"><i class="fa fa-thumbs-down"></i>25</a></div>
-                        </div>
-                        <hr>
-                        <div class="row photo__count clearfix">
-                          <div class="col-md-2 col-xs-12 col-sm-12">
-                            <div class="avatar"><img src="assets/img/bottom-banner/1.jpg" alt=""><a href="#0">User</a></div>
-                          </div>
-                          <div class="col-md-7 col-xs-12 col-sm-12">
-                            <div class="social-button"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
-                          </div>
-                          <div class="col-md-3 col-xs-12 col-sm-12">
-                            <p>Заработок автора составил:</p><span>6 баллов</span>
+                          <hr>
+                          <div class="row photo__count clearfix">
+                            <div class="col-md-2 col-xs-12 col-sm-12">
+                              <div class="avatar"><img src="assets/img/bottom-banner/1.jpg" alt=""><a href="#0">User</a></div>
+                            </div>
+                            <div class="col-md-7 col-xs-12 col-sm-12">
+                              <div class="social-button"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
+                            </div>
+                            <div class="col-md-3 col-xs-12 col-sm-12">
+                              <p class="zar text-center">Заработок автора составил:<br>6 баллов</p>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -186,11 +232,26 @@
                     <div class="content__ggl text-center">Реклама от Google</div>
                     <h2 class="text-center">Похожие фотографии</h2>
                     <ul class="photo-list">
-                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
-                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
-                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
-                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
-                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
+                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt="">
+                          <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                          <div class="view"><i class="fa fa-eye"></i>350</div>
+                          <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></li>
+                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt="">
+                          <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                          <div class="view"><i class="fa fa-eye"></i>350</div>
+                          <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></li>
+                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt="">
+                          <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                          <div class="view"><i class="fa fa-eye"></i>350</div>
+                          <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></li>
+                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt="">
+                          <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                          <div class="view"><i class="fa fa-eye"></i>350</div>
+                          <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></li>
+                      <li><a href="#0">Фото. Описание<img src="assets/img/bottom-banner/1.jpg" alt="">
+                          <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                          <div class="view"><i class="fa fa-eye"></i>350</div>
+                          <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></li>
                     </ul>
                   </div>
                 </div>

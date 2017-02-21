@@ -645,7 +645,7 @@ body
     text-align: center
   & .swiper-button-next,
   & .swiper-button-prev
-    top: 12% !important
+    top: 20% !important
 
 .service-img
   & > i
@@ -666,19 +666,23 @@ body
 .photo-list
   text-align: center
   & li
-    width: 100px;
+    width: auto;
     display: inline-block;
-    margin: 0 25%;
+    margin: 0 5%;
     & img
-      margin-top: 5px
+      margin: 5px 0
+    & .view
+      position: absolute;
+      width: 80%;
 
 .photo__content
   width: 100%;
   display: inline-block;
   margin-top: 20px;
   padding: 0 10px;
-  & i
-    margin-right: 5px
+  & .like-dislike
+    & i
+      margin-right: 5px
   & .likes, & .view
     margin-right: 10px
 
@@ -853,3 +857,17 @@ input.email[type=checkbox]
 [data-like]
   position: relative;
   z-index: 1000;
+
+.photo-wrapper
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  & img
+    width: 95%
+
+p.zar
+    display: inline-block;
+    padding: 5px 25px;
+    border: 2px solid gray;
+    border-radius: 10px;

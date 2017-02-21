@@ -20338,7 +20338,7 @@ body.modal-open {
 }
 .swiper-photo-single .swiper-button-next,
 .swiper-photo-single .swiper-button-prev {
-  top: 12% !important;
+  top: 20% !important;
 }
 .service-img > i {
   font-size: 20px;
@@ -20359,12 +20359,16 @@ body.modal-open {
   text-align: center;
 }
 .photo-list li {
-  width: 100px;
+  width: auto;
   display: inline-block;
-  margin: 0 25%;
+  margin: 0 5%;
 }
 .photo-list li img {
-  margin-top: 5px;
+  margin: 5px 0;
+}
+.photo-list li .view {
+  position: absolute;
+  width: 80%;
 }
 .photo__content {
   width: 100%;
@@ -20372,7 +20376,7 @@ body.modal-open {
   margin-top: 20px;
   padding: 0 10px;
 }
-.photo__content i {
+.photo__content .like-dislike i {
   margin-right: 5px;
 }
 .photo__content .likes,
@@ -20566,6 +20570,21 @@ input.email[type=checkbox] {
 [data-like] {
   position: relative;
   z-index: 1000;
+}
+.photo-wrapper {
+  padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.photo-wrapper img {
+  width: 95%;
+}
+p.zar {
+  display: inline-block;
+  padding: 5px 25px;
+  border: 2px solid #808080;
+  border-radius: 10px;
 }
 @keyframes swiper-preloader-spin {
   100% {

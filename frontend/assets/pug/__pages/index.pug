@@ -3,24 +3,6 @@ block main
   section.section__main
     .container-fluid
       .row
-        .col-md-3.col-sm-3.col-xs-12
-          .single-service
-            .service-img
-              i.fa.fa-user
-            .text
-              h3 Нравится
-            p 3071 пользователям
-        .col-md-9.col-sm-9.col-xs-12
-          .swiper-container.swiper-photos
-            .swiper-wrapper
-              - var n = 0
-              while n < 15
-                .swiper-slide
-                  a(href='#0')
-                    img(src='assets/img/bottom-banner/1.jpg' alt='')
-                - n++
-    .container-fluid
-      .row
         .col-md-2.col-sm-12.col-xs-12
           .left-content.pt-40
             .content-box.gift
@@ -137,12 +119,3 @@ block main
                   - n++
               a.btn.btn-default(href='#0')
                 span Вступить в борьбу за рейтинг
-  script.
-    $(function() {
-        var swiperPhotos = new Swiper('.swiper-photos', {
-            slidesPerView: 6,
-            spaceBetween: 30,
-            autoplay: 3000,
-            loop: true
-        });
-    })

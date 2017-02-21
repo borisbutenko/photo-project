@@ -393,6 +393,10 @@
                 .parents('.footer-banner').find('[data-like]')
                 .removeClass('color-red color-green');
 
+            console.log(1,
+                $(this)
+                .parents('li').find('[data-like]'))
+
             if ( data === 'up' ) $(this).addClass('color-green');
             if ( data === 'dw' ) $(this).addClass('color-red');
 

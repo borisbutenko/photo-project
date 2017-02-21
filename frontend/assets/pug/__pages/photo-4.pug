@@ -12,43 +12,43 @@ block main
           .swiper-container.swiper-photo-single
             .swiper-wrapper
               .swiper-slide
-                a(href='#0')
-                  img(src='assets/img/bottom-banner/4.jpg' alt='')
-                .photo__content
-                  .row.clearfix.like-dislike
-                    .col-md-2
-                      a(href='#0' data-action='like').likes
-                        i.fa.fa-thumbs-up
-                        | 270
-                    .col-md-2.col-md-offset-3
-                      .view.pull-left
-                        i.fa.fa-eye
-                        | 350
-                    .col-md-2.col-md-offset-3
-                      a(href='#0' data-action='dislike').dislike.pull-right
-                        i.fa.fa-thumbs-down
-                        | 25
-                  hr
-                  .row.photo__count.clearfix
-                    .col-md-2.col-xs-12.col-sm-12
-                      .avatar
-                        img(src='assets/img/bottom-banner/1.jpg' alt='')
-                        a(href='#0') User
-                    .col-md-7.col-xs-12.col-sm-12
-                      .social-button
-                        a(href='#0')
-                          i.fa.fa-facebook(aria-hidden='true')
-                        a(href='#0')
-                          i.fa.fa-vk(aria-hidden='true')
-                        a(href='#0')
-                          i.fa.fa-google-plus(aria-hidden='true')
-                        a(href='#0')
-                          i.fa.fa-linkedin(aria-hidden='true')
-                        a(href='#0')
-                          i.fa.fa-odnoklassniki(aria-hidden='true')
-                    .col-md-3.col-xs-12.col-sm-12
-                      p Заработок автора составил:
-                      span 6 баллов
+                .photo-wrapper
+                  a(href='#0')
+                    img(src='assets/img/bottom-banner/4.jpg' alt='')
+                  .photo__content
+                    .row.clearfix.like-dislike
+                      .col-md-2
+                        a(href='#0' data-action='like').likes
+                          i.fa.fa-thumbs-up
+                          | 270
+                      .col-md-2.col-md-offset-3
+                        .view.pull-left
+                          i.fa.fa-eye
+                          | 350
+                      .col-md-2.col-md-offset-3
+                        a(href='#0' data-action='dislike').dislike.pull-right
+                          i.fa.fa-thumbs-down
+                          | 25
+                    hr
+                    .row.photo__count.clearfix
+                      .col-md-2.col-xs-12.col-sm-12
+                        .avatar
+                          img(src='assets/img/bottom-banner/1.jpg' alt='')
+                          a(href='#0') User
+                      .col-md-7.col-xs-12.col-sm-12
+                        .social-button
+                          a(href='#0')
+                            i.fa.fa-facebook(aria-hidden='true')
+                          a(href='#0')
+                            i.fa.fa-vk(aria-hidden='true')
+                          a(href='#0')
+                            i.fa.fa-google-plus(aria-hidden='true')
+                          a(href='#0')
+                            i.fa.fa-linkedin(aria-hidden='true')
+                          a(href='#0')
+                            i.fa.fa-odnoklassniki(aria-hidden='true')
+                      .col-md-3.col-xs-12.col-sm-12
+                        p.zar.text-center Заработок автора составил:<br>6 баллов
                 .blog-comment
                   h2 3 comments
                   .single-comment
@@ -98,4 +98,13 @@ block main
                   li
                     a(href='#0') Фото. Описание
                       img(src='assets/img/bottom-banner/1.jpg' alt='')
+                      .likes.pull-left
+                        i.fa.fa-thumbs-up
+                        | 270
+                      .view
+                        i.fa.fa-eye
+                        | 350
+                      .dislike.pull-right
+                        i.fa.fa-thumbs-down
+                        | 25
                   - n++

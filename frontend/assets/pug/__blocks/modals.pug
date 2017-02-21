@@ -62,8 +62,7 @@
       .modal-body.clearfix
         .col-md-6
           .country-select
-            select.email.s-email.s-wid
-              option(selected) Выберите друга
+            select.email.s-email.s-wid(data-select id="select-2" multiple="multiple")
               option Друг 1
               option Друг 2
               option Друг 3
@@ -91,8 +90,7 @@
             label.required Количество баллов
             input.email(type='text')
           .country-select
-            select.email.s-email.s-wid
-              option(selected) Выберите друга
+            select.email.s-email.s-wid(data-select id="select-1" multiple="multiple")
               option Друг 1
               option Друг 2
               option Друг 3

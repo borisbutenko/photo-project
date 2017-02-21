@@ -30,7 +30,7 @@ block main
                 .gift__date.pull-left 12/17
                 .gift__time.pull-right 7:32
                 img(src='assets/img/bottom-banner/1.jpg' alt='')
-                a.add(href='#0')
+                a.btn.btn-default(href='#0')
                   span Принять участие
               h2 Подарки отправили
               ul.gift__list
@@ -68,35 +68,57 @@ block main
               a(href='upload-now.html') Загружено сегодня
             p 1232 фотографий
           hr
-          .footer-banner.overlay
-            a(href='#0')
-              img(src='assets/img/bottom-banner/1.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/2.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/3.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/4.jpg' alt='')
-          .footer-banner.overlay
-            a(href='#0')
-              img(src='assets/img/bottom-banner/1.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/2.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/3.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/4.jpg' alt='')
-          .footer-banner.overlay
-            a(href='#0')
-              img(src='assets/img/bottom-banner/1.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/2.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/3.jpg' alt='')
-            a(href='#0')
-              img(src='assets/img/bottom-banner/4.jpg' alt='')
+          .my-photo
+            - var n = 0
+            while n < 3
+              .footer-banner.overlay.popular
+                a(href='#0') Название фото
+                  img(src='assets/img/bottom-banner/1.jpg' alt='')
+                  .likes.pull-left(data-like='up')
+                    i.fa.fa-thumbs-up
+                    | 270
+                  .view
+                    i.fa.fa-eye
+                    | 350
+                  .dislike.pull-right(data-like='dw')
+                    i.fa.fa-thumbs-down
+                    | 25
+                a(href='#0') Название фото
+                  img(src='assets/img/bottom-banner/2.jpg' alt='')
+                  .likes.pull-left(data-like='up')
+                    i.fa.fa-thumbs-up
+                    | 270
+                  .view
+                    i.fa.fa-eye
+                    | 350
+                  .dislike.pull-right(data-like='dw')
+                    i.fa.fa-thumbs-down
+                    | 25
+                a(href='#0') Название фото
+                  img(src='assets/img/bottom-banner/3.jpg' alt='')
+                  .likes.pull-left(data-like='up')
+                    i.fa.fa-thumbs-up
+                    | 270
+                  .view
+                    i.fa.fa-eye
+                    | 350
+                  .dislike.pull-right(data-like='dw')
+                    i.fa.fa-thumbs-down
+                    | 25
+                a(href='#0') Название фото
+                  img(src='assets/img/bottom-banner/4.jpg' alt='')
+                  .likes.pull-left(data-like='up')
+                    i.fa.fa-thumbs-up
+                    | 270
+                  .view
+                    i.fa.fa-eye
+                    | 350
+                  .dislike.pull-right(data-like='dw')
+                    i.fa.fa-thumbs-down
+                    | 25
+              - n++
           .more-photos
-            a.add-button(href='all-photo.html') Смотреть больше
+            a.btn.btn-default(href='all-photo.html') Смотреть больше
         .col-md-2.col-sm-12.col-xs-12
           .left-content.pt-40
             .content-box.rating.gift
@@ -113,5 +135,14 @@ block main
                     a(href='#0')
                       img(src='assets/img/bottom-banner/1.jpg' alt='')
                   - n++
-              a.add(href='#0')
+              a.btn.btn-default(href='#0')
                 span Вступить в борьбу за рейтинг
+  script.
+    $(function() {
+        var swiperPhotos = new Swiper('.swiper-photos', {
+            slidesPerView: 6,
+            spaceBetween: 30,
+            autoplay: 3000,
+            loop: true
+        });
+    })

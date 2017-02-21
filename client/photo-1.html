@@ -22,7 +22,8 @@
     <script src="assets/libs/jquery.meanmenu.min.js"></script>
     <script src="assets/libs/jquery.scrollUp.min.js"></script>
     <script src="assets/libs/plugins.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="assets/libs/swiper.js"></script>
+    <script src="assets/libs/select2.full.js"></script>
     <script src="assets/js/main.min.js"></script>
   </head>
   <body id="no-bg">
@@ -125,13 +126,27 @@
                 <div class="swiper-container swiper-photo-single">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a>
-                      <div class="photo__content clearfix">
-                        <div class="avatar pull-left"><img src="assets/img/bottom-banner/1.jpg" alt=""><a href="#0">User</a></div>
-                        <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div>
-                        <div class="likes pull-right"><i class="fa fa-thumbs-up"></i>270</div>
-                        <div class="view pull-right"><i class="fa fa-eye"></i>350</div>
+                      <div class="photo__content">
+                        <div class="row clearfix like-dislike">
+                          <div class="col-md-2"><a class="likes" href="#0" data-action="like"><i class="fa fa-thumbs-up"></i>270</a></div>
+                          <div class="col-md-2 col-md-offset-3">
+                            <div class="view pull-left"><i class="fa fa-eye"></i>350</div>
+                          </div>
+                          <div class="col-md-2 col-md-offset-3"><a class="dislike pull-right" href="#0" data-action="dislike"><i class="fa fa-thumbs-down"></i>25</a></div>
+                        </div>
+                        <hr>
+                        <div class="row photo__count clearfix">
+                          <div class="col-md-2 col-xs-12 col-sm-12">
+                            <div class="avatar"><img src="assets/img/bottom-banner/1.jpg" alt=""><a href="#0">User</a></div>
+                          </div>
+                          <div class="col-md-7 col-xs-12 col-sm-12">
+                            <div class="social-button"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
+                          </div>
+                          <div class="col-md-3 col-xs-12 col-sm-12">
+                            <p>Заработок автора составил:</p><span>6 баллов</span>
+                          </div>
+                        </div>
                       </div>
-                      <div class="social-button mt-50"><a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-vk" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-google-plus" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-linkedin" aria-hidden="true"></i></a><a href="#0"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></div>
                       <div class="blog-comment">
                         <h2>3 comments</h2>
                         <div class="single-comment">
@@ -158,7 +173,7 @@
                         <form>
                           <label for="comment">Comment</label>
                           <textarea id="comment" cols="45" rows="8"></textarea>
-                        </form><a class="add-button" href="#0">Post comment</a>
+                        </form><a class="btn btn-default" href="#0">Post comment</a>
                       </div>
                     </div>
                   </div><a class="swiper-button-prev" href="#0"></a><a class="swiper-button-next" href="photo-2.html"></a>
@@ -282,8 +297,7 @@
           <div class="modal-body clearfix">
             <div class="col-md-6">
               <div class="country-select">
-                <select class="email s-email s-wid">
-                  <option selected>Выберите друга</option>
+                <select class="email s-email s-wid" data-select id="select-2" multiple="multiple">
                   <option>Друг 1</option>
                   <option>Друг 2</option>
                   <option>Друг 3</option>
@@ -322,8 +336,7 @@
                 <input class="email" type="text">
               </div>
               <div class="country-select">
-                <select class="email s-email s-wid">
-                  <option selected>Выберите друга</option>
+                <select class="email s-email s-wid" data-select id="select-1" multiple="multiple">
                   <option>Друг 1</option>
                   <option>Друг 2</option>
                   <option>Друг 3</option>

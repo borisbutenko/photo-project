@@ -14,30 +14,41 @@ block main
               .swiper-slide
                 a(href='#0')
                   img(src='assets/img/bottom-banner/1.jpg' alt='')
-                .photo__content.clearfix
-                  .avatar.pull-left
-                    img(src='assets/img/bottom-banner/1.jpg' alt='')
-                    a(href='#0') User
-                  .dislike.pull-right
-                    i.fa.fa-thumbs-down
-                    | 25
-                  .likes.pull-right
-                    i.fa.fa-thumbs-up
-                    | 270
-                  .view.pull-right
-                    i.fa.fa-eye
-                    | 350
-                .social-button.mt-50
-                  a(href='#0')
-                    i.fa.fa-facebook(aria-hidden='true')
-                  a(href='#0')
-                    i.fa.fa-vk(aria-hidden='true')
-                  a(href='#0')
-                    i.fa.fa-google-plus(aria-hidden='true')
-                  a(href='#0')
-                    i.fa.fa-linkedin(aria-hidden='true')
-                  a(href='#0')
-                    i.fa.fa-odnoklassniki(aria-hidden='true')
+                .photo__content
+                  .row.clearfix.like-dislike
+                    .col-md-2
+                      a(href='#0' data-action='like').likes
+                        i.fa.fa-thumbs-up
+                        | 270
+                    .col-md-2.col-md-offset-3
+                      .view.pull-left
+                        i.fa.fa-eye
+                        | 350
+                    .col-md-2.col-md-offset-3
+                      a(href='#0' data-action='dislike').dislike.pull-right
+                        i.fa.fa-thumbs-down
+                        | 25
+                  hr
+                  .row.photo__count.clearfix
+                    .col-md-2.col-xs-12.col-sm-12
+                      .avatar
+                        img(src='assets/img/bottom-banner/1.jpg' alt='')
+                        a(href='#0') User
+                    .col-md-7.col-xs-12.col-sm-12
+                      .social-button
+                        a(href='#0')
+                          i.fa.fa-facebook(aria-hidden='true')
+                        a(href='#0')
+                          i.fa.fa-vk(aria-hidden='true')
+                        a(href='#0')
+                          i.fa.fa-google-plus(aria-hidden='true')
+                        a(href='#0')
+                          i.fa.fa-linkedin(aria-hidden='true')
+                        a(href='#0')
+                          i.fa.fa-odnoklassniki(aria-hidden='true')
+                    .col-md-3.col-xs-12.col-sm-12
+                      p Заработок автора составил:
+                      span 6 баллов
                 .blog-comment
                   h2 3 comments
                   .single-comment
@@ -72,7 +83,7 @@ block main
                   form
                     label(for='comment') Comment
                     textarea#comment(cols='45' rows='8')
-                  a.add-button(href='#0') Post comment
+                  a.btn.btn-default(href='#0') Post comment
             a(href='#0').swiper-button-prev
             a(href='photo-2.html').swiper-button-next
         .col-md-3.col-sm-3.col-xs-12

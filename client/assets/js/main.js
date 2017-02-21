@@ -310,30 +310,24 @@
             $(this).next('.mean-nav').slideToggle(300);
         });
 
-        var swiperPhotos = new Swiper ('.swiper-photos', {
-            slidesPerView: 6,
-            spaceBetween: 30,
-            autoplay: 3000,
-            loop: true,
-            // Ajax on
-            // lazyLoading: true,
-            // lazyLoadingInPrevNext: true,
-            // preloadImages: false,
-            // lazyLoadingOnTransitionStart: true
-        });
-
-        var swiperPhotoSingle = new Swiper ('.swiper-photo-single', {
-            slidesPerView: 'auto',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            paginationClickable: true,
-            buttonDisabledClass: ''
-            // Ajax on
-            // lazyLoading: true,
-            // lazyLoadingInPrevNext: true,
-            // preloadImages: false,
-            // lazyLoadingOnTransitionStart: true
-        });
+        // if ( $('.swiper-photos').length )
+        //     var swiperPhotos = new Swiper ('.swiper-photos', {
+        //         slidesPerView: 6,
+        //         spaceBetween: 30,
+        //         autoplay: 3000,
+        //         loop: true,
+        //         // Ajax on
+        //         // lazyLoading: true,
+        //         // lazyLoadingInPrevNext: true,
+        //         // preloadImages: false,
+        //         // lazyLoadingOnTransitionStart: true
+        //     });
+        //
+        // var swiperPhotoSingle = new Swiper ('.swiper-photo-single', {
+        //     nextButton: '.swiper-button-next',
+        //     prevButton: '.swiper-button-prev',
+        //     buttonDisabledClass: ''
+        // });
 
         // $('.swiper-photo-single').on('click', 'a[data-action=lazy-swiper]', function () {
         //     nextI($('a.swiper-button-next'), $('a.swiper-button-prev'));
@@ -362,6 +356,47 @@
         //         btnPrev$.attr('href', '#0');
         //     }
         // }
+
+        $('.like-dislike').on('click', '[data-action]', function() {
+            var self$   = $(this),
+                data    = self$.data('action'),
+                target$ = self$.parents('.like-dislike');
+
+            $('.like-dislike [data-action]').removeClass('color-green color-red');
+
+            switch(data) {
+                case 'like':
+                    self$.addClass('color-green');
+                    target$
+                        .removeClass('disliked')
+                        .addClass('liked');
+                    break;
+                case 'dislike':
+                    self$.addClass('color-red');
+                    target$
+                        .removeClass('liked')
+                        .addClass('disliked');
+                    break;
+                default:
+                    return false;
+            }
+        });
+
+        $("[data-select]").select2({
+            placeholder : "Выберите друга"
+        });
+
+        $('[data-like]').on('click', function() {
+            var data = $(this).data('like');
+
+            $(this)
+                .parents('.footer-banner').find('[data-like]')
+                .removeClass('color-red color-green');
+
+            if ( data === 'up' ) $(this).addClass('color-green');
+            if ( data === 'dw' ) $(this).addClass('color-red');
+
+        });
 
     });
 

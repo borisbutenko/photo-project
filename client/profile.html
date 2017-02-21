@@ -22,7 +22,8 @@
     <script src="assets/libs/jquery.meanmenu.min.js"></script>
     <script src="assets/libs/jquery.scrollUp.min.js"></script>
     <script src="assets/libs/plugins.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="assets/libs/swiper.js"></script>
+    <script src="assets/libs/select2.full.js"></script>
     <script src="assets/js/main.min.js"></script>
   </head>
   <body id="no-bg">
@@ -119,14 +120,20 @@
               <div class="left-content pt-40">
                 <div class="content-box gift">
                   <h2>Мой рейтинг</h2>
-                  <div class="gift__last clearfix">35 место<img src="assets/img/bottom-banner/1.jpg" alt=""><a class="add" href="my-photo.html"><span>Мои фото</span></a><a class="add" href="#0" data-toggle="modal" data-target="#set-address"><span>Указать адрес доставки</span></a><a class="add" href="#0" data-toggle="modal" data-target="#profile-settings"><span>Настройки</span></a><a class="add" href="#0" data-toggle="modal" data-target="#send-gift"><span>Отправить подарок</span></a><a class="add" href="#0" data-toggle="modal" data-target="#send-balls"><span>Подарить баллы</span></a></div>
+                  <div class="gift__last clearfix">35 место<img src="assets/img/bottom-banner/1.jpg" alt=""><a class="btn btn-default" href="my-photo.html"><span>Мои фото</span></a><a class="btn btn-default" href="#0" data-toggle="modal" data-target="#set-address"><span>Указать адрес доставки</span></a><a class="btn btn-default" href="#0" data-toggle="modal" data-target="#profile-settings"><span>Настройки</span></a><a class="btn btn-default" href="#0" data-toggle="modal" data-target="#send-gift"><span>Отправить подарок</span></a><a class="btn btn-default" href="#0" data-toggle="modal" data-target="#send-balls"><span>Подарить баллы</span></a></div>
                 </div>
               </div>
             </div>
             <div class="col-md-8 col-sm-12 col-xs-12">
               <hr>
-              <div class="section-title">
-                <h3>Сидоров Иван</h3><span>28 лет</span>
+              <div class="clearfix">
+                <div class="section-title pull-left" style="margin-left: 25px;">
+                  <h3>Сидоров Иван</h3><span class="pull-left" style="margin-top: 10px;">28 лет</span>
+                </div>
+                <div class="rating-up pull-right">
+                  <h4>Повысить рейтинг</h4>
+                  <div class="pull-right clearfix"><a href="#0"><i class="fa fa-arrow-up"></i></a><a href="#0"><i class="fa fa-arrow-down"></i></a></div>
+                </div>
               </div>
               <hr>
               <h2>Мне подарили баллы</h2>
@@ -202,10 +209,35 @@
                 <p>75 фотографий</p>
               </div>
               <hr>
-              <div class="footer-banner overlay"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/2.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/3.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/4.jpg" alt=""></a></div>
-              <div class="footer-banner overlay"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/2.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/3.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/4.jpg" alt=""></a></div>
-              <div class="footer-banner overlay"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/2.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/3.jpg" alt=""></a><a href="#0"><img src="assets/img/bottom-banner/4.jpg" alt=""></a></div>
-              <div class="more-photos pt-15"><a class="add-button" href="my-photo.html">Смотреть все</a></div>
+              <div class="my-photo">
+                <div class="footer-banner overlay"><a href="#0">Название фото<img src="assets/img/bottom-banner/1.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a><a href="#0">Название фото<img src="assets/img/bottom-banner/2.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a><a href="#0">Название фото<img src="assets/img/bottom-banner/3.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a><a href="#0">Название фото<img src="assets/img/bottom-banner/4.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></div>
+                <div class="footer-banner overlay"><a href="#0">Название фото<img src="assets/img/bottom-banner/1.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a><a href="#0">Название фото<img src="assets/img/bottom-banner/2.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a><a href="#0">Название фото<img src="assets/img/bottom-banner/3.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a><a href="#0">Название фото<img src="assets/img/bottom-banner/4.jpg" alt="">
+                    <div class="likes pull-left"><i class="fa fa-thumbs-up"></i>270</div>
+                    <div class="view"><i class="fa fa-eye"></i>350</div>
+                    <div class="dislike pull-right"><i class="fa fa-thumbs-down"></i>25</div></a></div>
+              </div>
+              <div class="more-photos pt-15"><a class="btn btn-default" href="my-photo.html">Смотреть все</a></div>
               <hr>
             </div>
             <div class="col-md-12">
@@ -336,8 +368,7 @@
           <div class="modal-body clearfix">
             <div class="col-md-6">
               <div class="country-select">
-                <select class="email s-email s-wid">
-                  <option selected>Выберите друга</option>
+                <select class="email s-email s-wid" data-select id="select-2" multiple="multiple">
                   <option>Друг 1</option>
                   <option>Друг 2</option>
                   <option>Друг 3</option>
@@ -376,8 +407,7 @@
                 <input class="email" type="text">
               </div>
               <div class="country-select">
-                <select class="email s-email s-wid">
-                  <option selected>Выберите друга</option>
+                <select class="email s-email s-wid" data-select id="select-1" multiple="multiple">
                   <option>Друг 1</option>
                   <option>Друг 2</option>
                   <option>Друг 3</option>

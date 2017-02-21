@@ -22,7 +22,8 @@
     <script src="assets/libs/jquery.meanmenu.min.js"></script>
     <script src="assets/libs/jquery.scrollUp.min.js"></script>
     <script src="assets/libs/plugins.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="assets/libs/swiper.js"></script>
+    <script src="assets/libs/select2.full.js"></script>
     <script src="assets/js/main.min.js"></script>
   </head>
   <body id="no-bg">
@@ -170,7 +171,7 @@
                               <label for="email">Email</label>
                               <input id="email" type="email">
                             </div>
-                          </form><a class="add-button" href="#0">Post comment</a>
+                          </form><a class="btn btn-default" href="#0">Post comment</a>
                         </div>
                       </div>
                     </div>
@@ -202,7 +203,7 @@
                         <li><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
                         <li><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
                         <li><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></li>
-                      </ul><a class="add text-center" href="#0" style="display:block;"><span>Вступить в борьбу за рейтинг</span></a>
+                      </ul><a class="btn btn-default text-center" href="#0" style="display:block;"><span>Вступить в борьбу за рейтинг</span></a>
                     </div>
                   </div>
                 </div>
@@ -309,8 +310,7 @@
           <div class="modal-body clearfix">
             <div class="col-md-6">
               <div class="country-select">
-                <select class="email s-email s-wid">
-                  <option selected>Выберите друга</option>
+                <select class="email s-email s-wid" data-select id="select-2" multiple="multiple">
                   <option>Друг 1</option>
                   <option>Друг 2</option>
                   <option>Друг 3</option>
@@ -349,8 +349,7 @@
                 <input class="email" type="text">
               </div>
               <div class="country-select">
-                <select class="email s-email s-wid">
-                  <option selected>Выберите друга</option>
+                <select class="email s-email s-wid" data-select id="select-1" multiple="multiple">
                   <option>Друг 1</option>
                   <option>Друг 2</option>
                   <option>Друг 3</option>

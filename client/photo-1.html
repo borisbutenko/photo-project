@@ -114,13 +114,12 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="single-service">
-              <div class="service-img"><i class="fa fa-user"></i></div>
-              <div class="text">
+            <div class="single-service userslike">
+              <div class="service-img"></div>
+              <div><a href="0#"><i class="fa fa-thumbs-up"></i></a>
                 <h3>Нравится</h3>
+                <p>3071 пользователям<br>Последние лайки от:</p>
               </div>
-              <p>3071 пользователям</p>
-              <p>Последние лайки от:</p>
               <div class="swiper-container swiper-photos">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><a href="#0"><img src="assets/img/bottom-banner/1.jpg" alt=""></a></div>
@@ -138,9 +137,7 @@
           $(function () {
               var swiperPhotos = new Swiper('.swiper-photos', {
                   slidesPerView: 3,
-                  spaceBetween: 10,
-                  autoplay: 5000,
-                  loop: true
+                  spaceBetween: 10
               });
           })
         </script>
@@ -216,7 +213,7 @@
                 </div>
               </div>
               <div class="col-md-3 col-sm-3 col-xs-12">
-                <div class="left-content pt-40">
+                <div class="left-content">
                   <div class="content-box">
                     <div class="content__text text-center">Место для текста</div>
                     <div class="content__ggl text-center">Реклама от Google</div>

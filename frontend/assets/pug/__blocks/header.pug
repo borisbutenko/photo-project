@@ -88,13 +88,13 @@
 .container-fluid
   .row
     .col-md-3.col-sm-3.col-xs-12
-      .single-service
+      .single-service.userslike
         .service-img
-          i.fa.fa-user
-        .text
+        div
+          a(href='0#')
+            i.fa.fa-thumbs-up
           h3 Нравится
-        p 3071 пользователям
-        p Последние лайки от:
+          p 3071 пользователям<br>Последние лайки от:
         .swiper-container.swiper-photos
           .swiper-wrapper
             - var n = 0
@@ -110,8 +110,6 @@
       $(function () {
           var swiperPhotos = new Swiper('.swiper-photos', {
               slidesPerView: 3,
-              spaceBetween: 10,
-              autoplay: 5000,
-              loop: true
+              spaceBetween: 10
           });
       })

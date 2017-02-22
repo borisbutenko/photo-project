@@ -20621,6 +20621,9 @@ main {
 [hidden] {
   display: none !important;
 }
+.userslike__img {
+  width: 80%;
+}
 @keyframes swiper-preloader-spin {
   100% {
     transform: rotate(360deg);

@@ -20587,10 +20587,18 @@ p.zar {
   border-radius: 10px;
 }
 .large-photo {
-  background: rgba(0,0,0,0) url("img/footer-bg.jpg") no-repeat 0 0/cover;
-  width: 100%;
-  height: 196px;
-  padding-bottom: 10px;
+  float: right;
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+.large-photo p {
+  text-align: center;
+}
+.large-photo ol {
+  padding-left: 1rem;
+}
+.large-photo ol li {
+  padding: 0.2rem 0;
 }
 div.userslike {
   padding: 0;
@@ -20625,9 +20633,14 @@ main {
   width: 80%;
 }
 .bordersq {
+  margin: 0 1.5rem;
   border: 2px solid #e5e5e5;
   border-radius: 10px;
   height: 200px;
+}
+.photo-bcg {
+  background: url("img/footer-bg.jpg") no-repeat center;
+  padding: 2rem 0;
 }
 @keyframes swiper-preloader-spin {
   100% {

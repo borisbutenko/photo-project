@@ -86,8 +86,8 @@
                 li
                   a(href='rules.html') Правила
 .container-fluid
-  .row
-    .col-md-3.col-sm-3.col-xs-12.bordersq
+  .row.photo-bcg
+    .col-md-3.col-sm-3.col-xs-12.bordersq.pull-left.clearfix
       .single-service.userslike
         .service-img
         div
@@ -103,9 +103,21 @@
                 a(href='#0')
                   img.userslike__img(src='assets/img/bottom-banner/1.jpg' alt='')
               - n++
-    .col-md-9.col-sm-9.col-xs-12
+    .col-md-3.col-sm-3.col-xs-12.bordersq.pull-right.clearfix
       .large-photo
-
+        p YouGall - <strong>Это просто</strong>
+        ol
+          li
+            strong Загружайте фотографии виртуально
+          li
+            strong Получайте подарки реально
+          li
+            strong Принимайте участия
+          li
+            strong Держите рейтинг лучших
+          li
+            | Зарабатывайте&nbsp;
+            strong баллы
   script.
       $(function () {
           var swiperPhotos = new Swiper('.swiper-photos', {
